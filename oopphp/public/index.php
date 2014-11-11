@@ -88,14 +88,26 @@ config ( "../app/config.ini" );
 		$kc->setLink ( $kd1 );
 		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
 	?><br><?php
+		echo $kd1 . "ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
+	?><br><?php
 		$kc->setLink ( $kd2 );
 		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
+	?><br><?php
+		echo $kd2 . "ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
 	?><br><?php
 		$kc->removeLink ();
 		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
 	?><br><?php
+		echo $kd1 . "ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
+	?><br><?php
+		echo $kd2 . "ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
+	?><br><?php
 		$kc->setLink ( $kd2 );
 		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
+	?><br><?php
+		echo $kd1 . "ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
+	?><br><?php
+		echo $kd2 . "ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
 	?>
 	
 	<h4>unidirektionale Assoziation mit variabler Multiplizitaet 1:N(1:*)</h4><?php
