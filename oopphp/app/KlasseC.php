@@ -5,10 +5,10 @@ class KlasseC{
 	
 	public function setLink(KlasseD $objD) {
 	 	if ($this->objKlasseD != null && $this->objKlasseD != $objD) {
-			// wird das alte ObjektB aufgefordert, den Link auf das ObjektA (this) zu löschen
+			// wird das alte ObjektD aufgefordert, den Link auf das ObjektE (this) zu löschen
 			$this->objKlasseD->removeLink($this);
 		}
-		// jetzt verlinke ich das neue ObjektB
+		// jetzt verlinke ich das neue ObjektD
 		$this->objKlasseD = $objD;
 		// ... und lasse mich rückverlinken, muss dabei aber prüfen,
 		// dass ich nicht wechselseitig und endlos setLink() aufrufe
