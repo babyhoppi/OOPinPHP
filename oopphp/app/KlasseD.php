@@ -18,7 +18,7 @@ class KlasseD{
 	}
 
 	public function removeLink() {
-		$this->objKlasseC = null;
+		$this->objKlasseC = null &&	$this->objKlasseD->removeLink($this);
 	}
 
 	public function getLink() {
