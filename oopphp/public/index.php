@@ -98,6 +98,18 @@ config ( "../app/config.ini" );
 		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
 	?>
 	
+	<h4>unidirektionale Assoziation mit variabler Multiplizitaet 1:N(1:*)</h4><?php
 	
+		$ke = new KlasseE ();
+		$kf1 = new KlasseF ();
+		$kf2 = new KlasseF ();
+		$kf3 = new KlasseF ();
+		$kf4 = new KlasseF ();
+	
+		$ke->setLink ( $kf1 );
+		$ke->setLink ( $kf2 );
+		echo $ke . "ist verlinkt mit " . $ke->getLinkAll() . PHP_EOL;
+	
+	?>
 	</body>
 </html>
