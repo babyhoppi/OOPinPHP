@@ -29,14 +29,14 @@ config ( "../app/config.ini" );
 		
 		// $d = new DemoA();
 		// echo dirname(__FILE__);
-		// Nicht sinnvoll da es zu Problemen kommen könnte
+		// Nicht sinnvoll da es zu Problemen kommen kï¿½nnte
 		// include '../app/DemoA.php';
 		// $d = new DemoA();
 		// ____________________________________________________________
 		
 		/**
-		 * die magische Methode lädt automaitsch den Wuelltext einer Klasse
-		 * nach, sobald er benötigt wird
+		 * die magische Methode lï¿½dt automaitsch den Wuelltext einer Klasse
+		 * nach, sobald er benï¿½tigt wird
 		 *
 		 * @param type $klasse
 		 *        	Name der Klasse OHNE Extension
@@ -56,9 +56,15 @@ config ( "../app/config.ini" );
 		
 		// ________________________________________________________________
 		
-		// NEUES AUTO
-		// $car = new Car();
-		// echo $car.PHP_EOL;
+		 //NEUES AUTO
+//		 $car = new Car();
+//                 $car->startEngine();
+//                 $car->moveForward(500);
+//                 $car->getMilage();
+//		 echo $car->getMilage().PHP_EOL;
+//                 //Die clone-Funktion wurde in Car ergÃ¤nzt und der Kilometerstand auf 0 gesetzt
+//                 $car2 = clone $car;
+//                 echo $car2->getMilage().PHP_EOL;
 		
 		?><br>
 	<h4>unidirektionale Assoziation mit fester Multiplizitaet 1:1</h4><?php
@@ -86,28 +92,28 @@ config ( "../app/config.ini" );
 		$kd2 = new KlasseD ();
 	
 		$kc->setLink ( $kd1 );
-		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
+		echo $kc . " ist verlinkt mit " . $kc->getLink () . PHP_EOL;
 	?><br><?php
-		echo $kd1 . "ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
+		echo $kd1 . " ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
 	?><br><?php
 		$kc->setLink ( $kd2 );
-		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
+		echo $kc . " ist verlinkt mit " . $kc->getLink () . PHP_EOL;
 	?><br><?php
-		echo $kd2 . "ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
+		echo $kd2 . " ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
 	?><br><?php
 		$kc->removeLink ();
-		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
+		echo $kc . " ist verlinkt mit " . $kc->getLink () . PHP_EOL;
 	?><br><?php
-		echo $kd1 . "ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
+		echo $kd1 . " ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
 	?><br><?php
-		echo $kd2 . "ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
+		echo $kd2 . " ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
 	?><br><?php
 		$kc->setLink ( $kd2 );
 		echo $kc . "ist verlinkt mit " . $kc->getLink () . PHP_EOL;
 	?><br><?php
-		echo $kd1 . "ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
+		echo $kd1 . " ist verlinkt mit " . $kd1->getLink () . PHP_EOL;
 	?><br><?php
-		echo $kd2 . "ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
+		echo $kd2 . " ist verlinkt mit " . $kd2->getLink () . PHP_EOL;
 	?>
 	
 	<h4>unidirektionale Assoziation mit variabler Multiplizitaet 1:N(1:*)</h4><?php
@@ -120,7 +126,7 @@ config ( "../app/config.ini" );
 	
 		$ke->setLink ( $kf1 );
 		$ke->setLink ( $kf2 );
-		echo $ke . "ist verlinkt mit " . $ke->getLinkAll() . PHP_EOL;
+		echo $ke . " ist verlinkt mit " . $ke->getLinkAll() . PHP_EOL;
 	
 	?>
 	</body>

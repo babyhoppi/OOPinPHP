@@ -14,8 +14,8 @@ class Car implements Vehicle{
 	public function getMilage() {
 		return $this->milage;
 	}
-	
-	public function  moveForward() {
+
+	public function  moveForward($miles) {
 		$this->milage += $miles;
 	}
 	
@@ -32,5 +32,7 @@ class Car implements Vehicle{
 		return __CLASS__. ":" . spl_object_hash($this). " meldet sich!";
 	}
 	
-	
+	public function __clone() {
+            $this->milage = 0;
+        }
 }
